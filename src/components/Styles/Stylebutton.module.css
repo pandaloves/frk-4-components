@@ -1,0 +1,14 @@
+.stylebutton {
+    background-color: #f7d08a;
+    border-color: #f7d08a;
+    border-radius: 5px;
+    margin: 5px;
+    font-family: "Martel", serif;
+    font-size: 18px;
+}
+
+.stylebutton:hover {
+    background-color: #418153 ;
+    border-color: 1px solid white;
+    color: white;
+}
