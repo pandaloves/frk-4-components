@@ -33,6 +33,7 @@ export default {
         // Define globals for UMD build if needed
         react: "React",
         "react-dom": "ReactDOM",
+        "@fortawesome/free-brands-svg-icons": "freeBrandsSvgIcons",
       },
     },
   ],
@@ -53,5 +54,8 @@ export default {
       presets: ["@babel/preset-env", "@babel/preset-react"],
     }),
   ],
-  external: Object.keys(pkg.peerDependencies || {}),
+  external: [
+    ...Object.keys(pkg.peerDependencies || {}), // Externalize peerDependencies
+    "@fortawesome/free-brands-svg-icons", // Externalize FontAwesome icons
+  ],
 };
