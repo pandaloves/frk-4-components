@@ -1,0 +1,16 @@
+.contentContainer{
+    font-family: "Martel", serif;
+    display: flex;
+    flex-direction: column;
+    gap: 61px;
+}
+
+.title{
+    font-size: 34px;
+    margin: 0;
+    margin-bottom: -5px;
+}
+
+.text{
+    font-size: 18px;
+}
