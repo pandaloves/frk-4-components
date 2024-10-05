@@ -1,16 +1,39 @@
-.contentContainer{
-    font-family: "Martel", serif;
-    display: flex;
-    flex-direction: column;
-    gap: 61px;
+.contentContainer {
+  font-family: "Martel", serif;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.title{
-    font-size: 34px;
-    margin: 0;
-    margin-bottom: -5px;
+.title {
+  font-size: 34px;
+  margin: 0;
+  margin-bottom: -5px;
 }
 
-.text{
-    font-size: 18px;
+.text {
+  font-size: 18px;
+}
+
+/* For smaller screens (up to 768px wide) */
+@media (max-width: 768px) {
+  .title {
+    font-size: 28px;
+    margin-bottom: 2px;
+  }
+
+  .text {
+    font-size: 15px;
+  }
+}
+
+/* For smaller screens (up to 375px wide) */
+@media (max-width: 375px) {
+  .title {
+    font-size: 20px;
+  }
+
+  .text {
+    font-size: 12px;
+  }
 }

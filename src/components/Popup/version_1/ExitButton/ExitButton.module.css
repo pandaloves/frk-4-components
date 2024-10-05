@@ -1,7 +1,23 @@
 .svg {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .svg:hover line {
-    stroke: #F7D08A; 
+  stroke: #f7d08a;
+}
+
+/* For smaller screens (up to 768px wide) */
+@media (max-width: 768px) {
+  .svg {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+/* For smaller screens (up to 375px wide) */
+@media (max-width: 375px) {
+  .svg {
+    width: 18px;
+    height: 18px;
+  }
 }

@@ -1,3 +1,4 @@
+import {Header} from "./components/Header"
 import { SearchBar } from "./components/Searchbar/Searchbar";
 import { SearchResult } from "./components/SearchResult";
 import { ShowImages } from "./components/Images";
@@ -9,6 +10,7 @@ import { Footer } from "./components/Footer";
 import { FetchTe } from "./components/sortiment";
 
 export {
+  Header,
   ContactInfo,
   ContactLink,
   SearchBar,
