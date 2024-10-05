@@ -1,0 +1,30 @@
+.resultContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+.resultItem {
+  text-align: center;
+}
+
+.image {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.title {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.resultHeader {
+  text-align: center;
+  font-size: 1.2rem;  
+  font-weight: normal; 
+  margin-bottom: 20px; 
+}

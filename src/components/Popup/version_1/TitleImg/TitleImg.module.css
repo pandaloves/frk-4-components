@@ -1,27 +1,42 @@
 .contentWrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 31px;
-    font-family: "Martel", serif;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: "Martel", serif;
 }
 
 .imgContainer {
-    height: 373px;
-    width: 100%;
-    max-width: 416px;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
+  height: 373px;
+  width: 80%;
+  max-width: 416px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .img {
-    height: 100%;
-    width: auto;
-    max-width: 100%; 
-    object-fit: cover; 
-    display: block; 
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 5px;
 }
 
 .title {
-    font-size: 50px;
+  font-size: 50px;
+}
+
+/* For smaller screens (up to 768px wide) */
+@media (max-width: 768px) {
+  .title {
+    font-size: 36px;
+  }
+}
+
+/* For smaller screens (up to 375px wide) */
+@media (max-width: 375px) {
+  .title {
+    font-size: 26px;
+  }
 }

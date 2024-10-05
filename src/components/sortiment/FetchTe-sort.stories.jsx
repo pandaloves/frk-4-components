@@ -1,12 +1,13 @@
 import FetchTe from "./FetchTe-sort";
+import teaData from "../../../public/api/products.json";
 
 export default {
-    title: 'TE/FetchTeInfo',
-    component: FetchTe,
-}
+  title: "TE/FetchTeInfo",
+  component: FetchTe,
+};
 
-export const Default = () => {
-    return( 
-        <FetchTe/>
-    )
-}
+export const Default = {
+  args: {
+    sortimentData: teaData,
+  },
+};
