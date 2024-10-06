@@ -14,3 +14,14 @@
   text-decoration: none;
   cursor: pointer;
 }
+
+/* For smaller screens (up to 768px wide) */
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+}
