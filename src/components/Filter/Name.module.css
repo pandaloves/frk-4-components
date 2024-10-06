@@ -3,3 +3,17 @@
   font-size: 20px;
   text-align: center;
 }
+
+/* For smaller screens (up to 768px wide) */
+@media (max-width: 768px) {
+  .name {
+    font-size: 15px;
+  }
+}
+
+/* For smaller screens (up to 375px wide) */
+@media (max-width: 375px) {
+  .name {
+    font-size: 13px;
+  }
+}
