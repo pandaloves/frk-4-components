@@ -37,7 +37,7 @@ const SearchBar = ({ teaData }) => {
   };
 
   return (
-    <div className={styles.container}>
+    <div>
       <InputField searchHandeler={searchHandeler} searchInput={searchInput} />
       <SearchButton handleSearchClick={handleSearchClick} />
 

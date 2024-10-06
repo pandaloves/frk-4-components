@@ -33,6 +33,7 @@ export default {
         // Define globals for UMD build if needed
         react: "React",
         "react-dom": "ReactDOM",
+        "react-router-dom": "ReactRouterDOM",
         "@fortawesome/free-brands-svg-icons": "freeBrandsSvgIcons",
       },
     },
@@ -57,5 +58,6 @@ export default {
   external: [
     ...Object.keys(pkg.peerDependencies || {}), // Externalize peerDependencies
     "@fortawesome/free-brands-svg-icons", // Externalize FontAwesome icons
+    "react-router-dom", // Externalize react-router-dom
   ],
 };
