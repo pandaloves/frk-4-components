@@ -8,13 +8,13 @@ const ContactInfo = () => {
     return (
     <div className={styles.contactbox}>
         <div className={styles.contact}>
-        <h2>KONTAKT</h2>
+        <h2>KONTAKT</h2><br />
         <p>Har du frågor? Tveka inte att kontakta oss.</p>
         </div>
-        <hr className={styles.line} />
+        <hr className={styles.line} /> <br />
         <div className={styles.openhoures}>
-            <h2>Öppettider</h2>
-            <p>Vardagar: 09:00 - 18:00</p>
+            <h2>Öppettider</h2><br />
+            <p>Vardagar: 09:00 - 18:00</p> <br />
             <p>Helger: 10:00 - 16:00</p>
         </div>
         <hr className={styles.line} />
@@ -38,7 +38,6 @@ const ContactInfo = () => {
                 <p>08-123 456 78</p>
             </div>
         </div>
-        
     </div>
     )
 };

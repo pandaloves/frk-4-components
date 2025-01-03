@@ -32,10 +32,10 @@ const Footer = () => {
 </div>
 
       <div className={styles.footerBottom}>
-        <p>©Here's The Tea 2024</p> {/* Flyttad copyright till vänster */}
+        <p>©Here's The Tea 2024</p> 
         <p>
           <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a> | <a href="#">Affiliate Disclosure</a>
-        </p> {/* Flyttad policy till höger */}
+        </p> 
       </div>
     </footer>
   );
