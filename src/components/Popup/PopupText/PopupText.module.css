@@ -1,0 +1,30 @@
+.contentContainer {
+  font-family: "Martel", serif;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 5px;
+  margin: 10px 0;
+}
+
+.title {
+  font-size: 20px;
+}
+
+.text {
+  font-size: 18px;
+  margin-top: 1px;
+}
+
+@media (max-width: 768px) {
+  .contentContainer {
+    gap: 1px;
+  }
+}
+

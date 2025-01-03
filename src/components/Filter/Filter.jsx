@@ -1,7 +1,4 @@
-import React, { useState, useEffect } from "react";
-import Title from "./Title";
-import Image from "./Image";
-import Name from "./Name";
+import React from "react";
 import styles from "./Filter.module.css";
 
 const Filter = ({ teaData }) => {
@@ -11,13 +8,15 @@ const Filter = ({ teaData }) => {
 
   return (
     <div className={styles.filter}>
-      <Title />
+      <h2 className={styles.title}>Filter</h2>
       <div className={styles.container}>
         {teaData.map((item) => (
-          <a href="#" target="_blank" key={item.id} className={styles.link}>
-            <Image image={item.image} />
-            <Name name={item.name} />
-          </a>
+         <a href="#" target="_blank" key={item.id} className={styles.link}>
+          <div className={styles.imgContainer}>
+            <img className={styles.image} src={item.image} alt={item.name} />
+          </div>
+          <p className={styles.name}>{item.name}</p>
+         </a>
         ))}
       </div>
     </div>

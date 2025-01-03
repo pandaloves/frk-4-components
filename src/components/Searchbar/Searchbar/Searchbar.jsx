@@ -12,7 +12,6 @@ const SearchBar = ({ teaData }) => {
     setSearchInput(e.target.value);
   };
 
-  // Logga värdet när det faktiskt uppdateras
   useEffect(() => {
     console.log({ searchInput });
   }, [searchInput]);
@@ -37,18 +36,16 @@ const SearchBar = ({ teaData }) => {
   };
 
   return (
-    <div>
+    <div className={styles.container}>
       <InputField searchHandeler={searchHandeler} searchInput={searchInput} />
       <SearchButton handleSearchClick={handleSearchClick} />
 
-      {/* Visa "Sökresultat:" endast om en sökning har gjorts och det finns resultat */}
       {filteredTeas.length > 0 && (
-        <div>
-          <p className={styles.title}>Sökresultat:</p>
+        <div className={styles.title}>
+          <h2>Sökresultat</h2>
         </div>
       )}
 
-      {/* Visa SearchResult-komponenten */}
       <SearchResult results={filteredTeas} />
     </div>
   );

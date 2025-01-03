@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./FetchTe-sort.module.css";
-import { Popup } from "../Popup/version_1";
+import { Popup } from "../Popup";
 
 const FetchTe = ({ sortimentData }) => {
   const [selectedTea, setSelectedTea] = useState(null);

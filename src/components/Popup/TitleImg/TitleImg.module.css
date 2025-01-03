@@ -1,0 +1,38 @@
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+  font-family: "Martel", serif;
+}
+
+.imgContainer {
+  height: 373px;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; 
+  display: block; 
+}
+
+.title {
+  font-size: 25px;
+}
+
+
+@media (max-width: 768px) {
+  .imgContainer {
+    height: 200px;
+  }
+}
+
+@media (max-width: 375px) {
+  .imgContainer {
+    height: 100px;
+  }
+}

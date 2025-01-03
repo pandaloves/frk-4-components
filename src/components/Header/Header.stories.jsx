@@ -1,9 +1,14 @@
-import React from "react";
-import Header from "./Header";
+import React from 'react';
+import { MemoryRouter } from 'react-router-dom';
+import Header from './Header';
 
 export default {
-  title: "TE/Header",
+  title: 'TE/Header',
   component: Header,
 };
 
-export const Default = {};
+export const DefaultHeader = () => (
+  <MemoryRouter>
+    <Header />
+  </MemoryRouter>
+);

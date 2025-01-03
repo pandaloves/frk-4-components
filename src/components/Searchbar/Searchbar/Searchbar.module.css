@@ -1,3 +1,10 @@
+.container {
+  font-family: Martel;
+  border-bottom: 1px solid black;
+  padding: 20px;
+  margin: auto 15px;
+}
+
 .title {
   text-align: center;
   font-size: 1.2rem;
